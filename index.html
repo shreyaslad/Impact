@@ -3,98 +3,90 @@
         <title>Impact - A modern CSS framework</title>
         <link rel="shortcut icon" href="img/impact.png">
     </head>
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bgimg {
-    background-image: url('https://i.ytimg.com/vi/lE6RYpe9IT0/maxresdefault.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-}
-
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
-}
-
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
-}
-
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-#demo{
-color: black;
-font-weight: bold;
-}
-hr {
-    margin: auto;
-    width: 40%;
-}
-</style>
 <body>
+  <h1>Impact</h1>
+  <h3>A Modern CSS Library</h3>
+  <p>Coming Soon: <span id="demo"></span></p>
+  <div class="social">
+<a class="github-button" href="https://github.com/PenetratingShot/Impact/subscription" data-icon="octicon-eye" data-style="mega" aria-label="Watch PenetratingShot/Impact on GitHub">Watch</a>
+  </div>
+  <style>
+    @font-face {
+  font-family: 'Gilroy-Bold';
+  font-style: normal;
+  src: local('Gilroy-ExtraBold'), url('https://github.com/Sidthecoder/ThatSid.ML/blob/master/css/Gilroy-ExtraBold.otf') format('opentype');
+}
 
-<div class="bgimg">
-  <div class="topleft">
-    <img src="img/impact.png" width="1024" height="1024">
-  </div>
-  <div class="middle">
-      <h1 style="font-size:30px;">IMPACT</h1>
-    <h3 style="font-size:30px;">a modern CSS framework</h3>
-    <hr>
-    <p id="demo" style="font-size:30px;"></p>
-  </div>
-  <div class="bottomleft">
-    <p>Made by Shreyas</p>
-  </div>
-</div>
-
-<script>
-// Set the date we're counting down to
+@font-face {
+  font-family: 'Gilroy-Light';
+  font-style: normal;
+  src: local('Gilroy-Light'), url('https://github.com/Sidthecoder/ThatSid.ML/blob/master/css/Gilroy-Light.otf') format('opentype');
+}
+body {
+  background: url('http://wallpapercave.com/wp/4lImLyA.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1 {
+  color: #1e90ff;
+  font-family: 'Gilroy-Bold';
+  font-size: 90px;
+  text-align: center;
+  margin-right: 0px;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
+  padding-top: 60px;
+}
+h3 {
+  color: #1e90ff;
+  font-family: 'Gilroy-Light';
+  font-size: 50px;
+  text-align: center;
+  margin-right: 0px;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
+}
+p {
+  color: #1e90ff;
+  font-family: 'Gilroy-Light';
+  font-size: 30px;
+  text-align: center;
+  margin-right: 0px;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0px;
+}
+.social {
+  text-align: center;
+  padding-top: 10px;
+}
+  </style>
+  <script>
 var countDownDate = new Date("Mar 10, 2017 15:37:25").getTime();
 
-// Update the count down every 1 second
 var countdownfunction = setInterval(function() {
 
-    // Get todays date and time
     var now = new Date().getTime();
     
-    // Find the distance between now an the count down date
     var distance = countDownDate - now;
     
-    // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    // Output the result in an element with id="demo"
     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
     
-    // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = "Impact has aldready came, right?";
     }
 }, 1000);
-</script>
-
+  </script>
 </body>
 </html>
