@@ -1,96 +1,94 @@
 <html>
-    <head>
-        <title>Impact - A modern CSS framework</title>
-        <link rel="shortcut icon" href="img/impact.png">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-<body>
-  <h1>Impact</h1>
-  <h3>A Modern CSS Library</h3>
-  <p>Coming Soon: <span id="demo"></span></p>
-  <div class="social">
-<a class="github-button" href="https://github.com/PenetratingShot/Impact/subscription" data-icon="octicon-eye" data-style="mega" aria-label="Watch PenetratingShot/Impact on GitHub">Watch Impact Repository</a>
-  <style>
-      
-@font-face {
-  font-family: 'Gilroy-Bold';
-  font-style: normal;
-  src: local('Gilroy-ExtraBold'), url(./fonts/Gilroy-ExtraBold.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gilroy-Light';
-  font-style: normal;
-  src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.otf) format('opentype');
-}
-      
-body {
-  background: url('http://wallpapercave.com/wp/4lImLyA.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-h1 {
-  font-family: 'Gilroy-Bold';
-  color: white;
-  font-size: 90px;
-  text-align: center;
-  margin-right: 0px;
-  text-decoration: none;
-  position: relative;
-  margin-bottom: 0px;
-  padding-top: 60px;
-}
-h3 {
-  font-family: 'Gilroy-Light';
-  color: white;
-  font-size: 50px;
-  text-align: center;
-  margin-right: 0px;
-  text-decoration: none;
-  position: relative;
-  margin-bottom: 0px;
-}
-p {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  margin-right: 0px;
-  text-decoration: none;
-  position: relative;
-  margin-bottom: 0px;
-  font-family: 'Lato', sans-serif;
-}
-.social {
-  text-align: center;
-  padding-top: 10px;
-}
-  </style>
-  <script>
-var countDownDate = new Date("Mar 10, 2017 15:37:25").getTime();
-
-var countdownfunction = setInterval(function() {
-
-    var now = new Date().getTime();
-    
-    var distance = countDownDate - now;
-    
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "Impact has aldready came, right?";
-    }
-}, 1000);
-  </script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
+   <head>
+      <title>Impact - A modern CSS framework</title>
+      <link rel="shortcut icon" href="img/impact.png">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <h1>Impact</h1>
+      <h3>A Modern CSS Library</h3>
+      <p>Coming Soon: <span id="demo"></span></p>
+      <div class="social">
+      <a class="github-button" href="https://github.com/PenetratingShot/Impact/subscription" data-style="mega" aria-label="Watch PenetratingShot/Impact on GitHub">Watch</a>
+      <style>
+         @font-face {
+         font-family: 'Gilroy-Bold';
+         font-style: normal;
+         src: local('Gilroy-ExtraBold'), url(./fonts/Gilroy-ExtraBold.otf) format('opentype');
+         }
+         @font-face {
+         font-family: 'Gilroy-Light';
+         font-style: normal;
+         src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.otf) format('opentype');
+         }
+         body {
+         background: url('http://wallpapercave.com/wp/4lImLyA.jpg') no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         }
+         h1 {
+         font-family: 'Gilroy-Bold';
+         color: white;
+         font-size: 90px;
+         text-align: center;
+         margin-right: 0px;
+         text-decoration: none;
+         position: relative;
+         margin-bottom: 0px;
+         padding-top: 60px;
+         }
+         h3 {
+         font-family: 'Gilroy-Light';
+         color: white;
+         font-size: 50px;
+         text-align: center;
+         margin-right: 0px;
+         text-decoration: none;
+         position: relative;
+         margin-bottom: 0px;
+         }
+         p {
+         color: white;
+         font-size: 30px;
+         text-align: center;
+         margin-right: 0px;
+         text-decoration: none;
+         position: relative;
+         margin-bottom: 0px;
+         font-family: 'Lato', sans-serif;
+         }
+         .social {
+         text-align: center;
+         padding-top: 10px;
+         }
+      </style>
+      <script>
+         var countDownDate = new Date("Mar 10, 2017 15:37:25").getTime();
+         
+         var countdownfunction = setInterval(function() {
+         
+             var now = new Date().getTime();
+             
+             var distance = countDownDate - now;
+             
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             
+             document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+             + minutes + "m " + seconds + "s ";
+             
+             if (distance < 0) {
+                 clearInterval(countdownfunction);
+                 document.getElementById("demo").innerHTML = "Impact has aldready came, right?";
+             }
+         }, 1000);
+           
+      </script>
+      <script async defer src="https://buttons.github.io/buttons.js"></script>
+   </body>
 </html>
