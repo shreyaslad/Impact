@@ -5,7 +5,7 @@
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
-   <body>
+   <body id="top-image">
       <h1>Impact</h1>
       <h3>A Modern CSS Library</h3>
       <p>Coming Soon: <span id="demo"></span></p>
@@ -23,11 +23,16 @@
          src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.otf) format('opentype');
          }
          body {
-         background: url('http://wallpapercave.com/wp/4lImLyA.jpg') no-repeat center center fixed;
-         -webkit-background-size: cover;
-         -moz-background-size: cover;
-         -o-background-size: cover;
-         background-size: cover;
+         background:url('http://wallpapercave.com/wp/4lImLyA.jpg'); 
+         -webkit-background-size: fill;
+         -moz-background-size: fill;
+         -o-background-size: fill;
+         background-size: fill;
+         position:fixed ;
+         width:100%;
+         z-index:0;
+         height:100%;
+         background-size: calc(100% + 50px);
          }
          h1 {
          font-family: 'Gilroy-Bold';
@@ -66,6 +71,18 @@
          }
       </style>
       <script>
+         $(document).ready(function() {
+         var movementStrength = 25;
+         var height = movementStrength / $(window).height();
+         var width = movementStrength / $(window).width();
+         $("#top-image").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+         });
+         });
          var countDownDate = new Date("Mar 10, 2017 15:37:25").getTime();
          
          var countdownfunction = setInterval(function() {
@@ -90,5 +107,6 @@
            
       </script>
       <script async defer src="https://buttons.github.io/buttons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
    </body>
 </html>
